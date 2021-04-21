@@ -1,15 +1,14 @@
 import React from 'react'
 
-// todo factor these into constants file
+// measure days since posting
 const ONE_DAY_MS = 24 * 3600 * 1000;
 
-// returns a date like Fri Jun 14
+
 function getMDY(ts) {
    return ts.toDateString().split(' ').slice(0, 3).join(' ')
 }
 
-// makeDate takes a TS and returns a date like Fri Jun 14
-// if it's today or yesterday, it returns that instead
+// return a formatted date
 function makeDate(timestamp) {
    const date = new Date(timestamp);
    const dateStr = getMDY(date);

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import 'normalize.css';
+import "normalize.css";
 import GlobalStyles from './style/GlobalStyles'
 
 import Jobs from './components/Jobs';

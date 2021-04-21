@@ -47,11 +47,12 @@ const GlobalStyles = createGlobalStyle`
     font-family: Poppins;
     src: url(${font});
   }
+
   html {
-    font-family: Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: var(--black);
-   font-size: var(--baseFontSize); /*18px*/
-   box-sizing: border-box;
+     box-sizing: border-box;
+     font-family: Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     color: var(--black);
+     font-size: var(--baseFontSize); /*18px*/
   }
 
 *,
@@ -61,12 +62,12 @@ const GlobalStyles = createGlobalStyle`
 }
 
 body {
-  font-weight: 400;
-  line-height: 1.75;
-  background: var(--background);
-  color: var(--textColor);
-  max-width: 1600px;
-  margin: 0 auto;
+   max-width: 1600px;
+   margin: 0 auto;
+   font-weight: 400;
+   line-height: 1.75;
+   background: var(--background);
+   color: var(--textColor);
 }
 
 /* Type-scale */
@@ -106,7 +107,6 @@ h4 {font-size: var(--h4);}
 h5 {font-size: var(--h5);}
 
 small, .text_small {font-size: var(--small);}
-/* End Type-scale */
 
 blockquote {
    margin: 0;
@@ -143,7 +143,8 @@ hr {
 }
 
 ul {
-   list-style: none;margin: 0;
+   list-style: none;
+   margin: 0;
    padding: 0;
 }
 
@@ -165,10 +166,6 @@ button {
 
 button:hover {
    box-shadow: var(--level-2);
-}
-
-button[disabled] {
-   opacity: 0.4;
 }
 
 .grid {
@@ -219,16 +216,6 @@ button[disabled] {
    border-radius: var(--borderRadius);
 }
 
-.card > *:first-child {
-   margin-top: 0;
-}
-
-.card > *:last-child {
-   margin-bottom: 0;
-}
-
-/* Table */
-/* Card */
 tr {
    border-radius: var(--borderRadius);
    :hover {

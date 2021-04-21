@@ -4,14 +4,14 @@ import JobModal from './JobModal'
 import styled from 'styled-components'
 
 const JobsStyle = styled.div`
-.top-bar {
-   text-align: center;
-   display: block;
-}
+  .top-bar {
+    display: block;
+    text-align: center;
+  }
   .job-pages {
     display: flex;
-    justify-content: space-between;
     padding: 1rem;
+    justify-content: space-between;
     button {
       background: var(--black);
       color: var(--white);
